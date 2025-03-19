@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidentes - Veritas.ia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Plugin para el botón de ubicación -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.css" />
+    
+    <!-- CSS para spinner de carga -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- CSS para el CAPTCHA -->
+    <link rel="stylesheet" href="/css/captcha.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="btn-back">
+            <i class="bi bi-arrow-left"></i> Volver a inicio
+        </a>
+        
+        <header class="header">
+            <h1 class="logo">Veritas<span style="color: var(--accent-color)">.ia</span></h1>
+            <p class="subtitle">Reportes de incidentes electorales</p>
+        </header>
+        
+        <main>
+            <div class="glass" style="padding: 30px; margin-bottom: 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+                    <h2 style="color: white; font-weight: 600; margin: 0;">
+                        <i class="bi bi-geo-alt" style="margin-right: 10px;"></i>
+                        Mapa de Incidentes
+                    </h2>
+                    <div>
+                        <button class="btn" id="refreshBtn" style="margin-right: 10px;">
+                            <i class="bi bi-arrow-clockwise"></i> Actualizar
+                        </button>
+                        <button class="btn btn-primary" id="newReportBtn">
+                            <i class="bi bi-plus"></i> Nuevo Reporte
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mapa -->
+                <div id="map"></div>
+            </div>
+        </main>
+        
+        <!-- Overlay para el sidebar -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        
+        <!-- Sidebar para el formulario de reporte -->
+        <div class="sidebar" id="sidebar">
+            <h3 style="color: white; margin-bottom: 20px; font-weight: 600;">Reportar incidente electoral</h3>
+            
+            <!-- Contenedor del temporizador de espera -->
+            <div id="cooldown-container" style="display: none; margin-bottom: 20px;">
+                <h4>Debes esperar para enviar otro reporte</h4>
+                <p>Tiempo restante: <span id="cooldown-timer">05:00</span></p>
+            </div>
+            
+            <form id="reportForm">
+                <div class="form-group">
+                    <label for="reportType" class="form-label">Tipo de incidente</label>
+                    <select class="form-control" id="reportType" name="report_type" required>
+                        <option value="" selected disabled>Seleccione el tipo de incidente</option>
+                        <option value="intimidacion">Intimidación a votantes</option>
+                        <option value="compra_votos">Compra de votos</option>
+                        <option value="propaganda_ilegal">Propaganda ilegal</option>
+                        <option value="suplantacion">Suplantación de identidad</option>
+                        <option value="obstruccion">Obstrucción del proceso</option>
+                        <option value="destruccion">Destrucción de material electoral</option>
+                        <option value="violencia">Violencia en centro de votación</option>
+                        <option value="fraude">Fraude en conteo</option>
+                        <option value="manipulacion">Manipulación de materiales</option>
+                        <option value="informacion_falsa">Difusión de información falsa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="form-label">Descripción del incidente</label>
+                    <textarea class="form-control" id="description" name="description" rows="5" required placeholder="Describe con detalle lo sucedido..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-secondary" id="getLocationBtn" style="width: 100%;">
+                        <i class="bi bi-geo-alt"></i> Obtener mi ubicación
+                    </button>
+                    <div id="locationInfo" style="margin-top: 10px; color: white;"></div>
+                </div>
+                
+                <!-- CAPTCHA -->
+                <!-- CAPTCHA - NUEVO CÓDIGO -->
+            <div id="captcha-container" style="display: block; margin: 15px 0; padding: 15px; border-radius: 8px; background-color: rgba(0, 0, 0, 0.2);">
+                <h4 style="color: white; margin-bottom: 5px;">Verifica que eres humano</h4>
+                <p style="color: rgba(255, 255, 255, 0.8);">Ingresa el siguiente código:</p>
+                
+                <!-- El elemento captcha-text se insertará aquí mediante JavaScript -->
+                
+                <input type="hidden" id="captcha-hash" name="captcha_hash" value="">
+                <input type="text" id="captcha-answer" name="captcha_answer" class="form-control" 
+                    style="margin-top: 10px; background-color: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2);" 
+                    placeholder="Ingresa el código">
+                
+                <!-- Botón de ayuda opcional -->
+                <button type="button" id="show-captcha-btn" class="btn btn-sm btn-link" 
+                        style="color: rgba(255,255,255,0.7); font-size: 0.8rem; text-decoration: underline;">
+                    ¿No ves el código? Haz clic aquí
+                </button>
+            </div>
+                
+                <!-- Campos ocultos para latitud y longitud -->
+                <input type="hidden" id="latitude" name="latitude">
+                <input type="hidden" id="longitude" name="longitude">
+                
+                <button type="submit" class="btn btn-primary" id="submitBtn" disabled style="width: 100%;">
+                    Enviar reporte
+                </button>
+            </form>
+        </div>
+        
+        <div class="notification" id="notification"></div>
+        
+        <footer style="text-align: center; margin-top: 50px; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            <p>© 2025 Veritas.ia - Reportes ciudadanos para la transparencia electoral.</p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Plugin para el botón de ubicación -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.js"></script>
+    
+    <!-- Script para el CAPTCHA y la funcionalidad principal -->
+    <script src="/js/reportar.js"></script>
+    
+    <!-- Script de emergencia para forzar visibilidad del CAPTCHA -->
+    <script>
+    // Script para forzar la visualización del CAPTCHA
+    (function() {
+        console.log("Script de emergencia para CAPTCHA iniciado");
+        
+        // Función para forzar la visualización del CAPTCHA
+        async function forceCaptchaDisplay() {
+            const captchaContainer = document.getElementById('captcha-container');
+            const captchaText = document.getElementById('captcha-text');
+            const captchaHash = document.getElementById('captcha-hash');
+            
+            if (!captchaContainer || !captchaText || !captchaHash) {
+                console.error("No se encontraron todos los elementos del CAPTCHA");
+                return;
+            }
+            
+            // Forzar visibilidad
+            captchaContainer.style.display = 'block';
+            captchaContainer.style.visibility = 'visible';
+            captchaContainer.style.opacity = '1';
+            
+            try {
+                // Solicitar CAPTCHA manualmente
+                const response = await fetch('/api/captcha');
+                if (!response.ok) {
+                    throw new Error(`Error ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log("CAPTCHA obtenido:", data);
+                
+                // Actualizar elementos
+                captchaText.textContent = data.captcha_text;
+                captchaHash.value = data.captcha_id;
+                
+                console.log("CAPTCHA visible y actualizado correctamente");
+            } catch (error) {
+                console.error("Error al obtener CAPTCHA:", error);
+            }
+        }
+        
+        // Ejecutar cuando se muestre el formulario
+        const newReportBtn = document.getElementById('newReportBtn');
+        if (newReportBtn) {
+            newReportBtn.addEventListener('click', function() {
+                // Esperar a que se muestre el sidebar
+                setTimeout(forceCaptchaDisplay, 500);
+            });
+        }
+    })();
+    </script>
+    
+    <!-- Implementación alternativa para el botón de localización -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Esta función se ejecutará si el plugin de localización no está disponible
+        const checkAndAddLocateControl = function() {
+            // Solo ejecutar si el plugin no está disponible
+            if (typeof L.control.locate !== 'function') {
+                console.log("Plugin de localización no disponible, usando implementación alternativa");
+                
+                // Asegurarse de que el mapa ya está inicializado
+                setTimeout(function() {
+                    if (window.map) {
+                        const locateControl = L.control({position: 'bottomright'});
+                        
+                        locateControl.onAdd = function(map) {
+                            const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+                            div.innerHTML = `
+                                <a href="#" title="Mostrar mi ubicación" role="button" aria-label="Mostrar mi ubicación" 
+                                   style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px;">
+                                    <i class="bi bi-geo-alt"></i>
+                                </a>
+                            `;
+                            
+                            div.onclick = function(e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                
+                                map.locate({
+                                    setView: true,
+                                    maxZoom: 16,
+                                    enableHighAccuracy: true
+                                });
+                                
+                                // Añadir clase activa
+                                div.querySelector('a').classList.add('active');
+                                div.querySelector('a').style.backgroundColor = '#4a80f5';
+                                div.querySelector('a').style.color = 'white';
+                                
+                                // Cambiar a inactivo después de localizar
+                                map.once('locationfound', function() {
+                                    setTimeout(() => {
+                                        div.querySelector('a').classList.remove('active');
+                                        div.querySelector('a').style.backgroundColor = '';
+                                        div.querySelector('a').style.color = '';
+                                    }, 2000);
+                                });
+                            };
+                            
+                            return div;
+                        };
+                        
+                        locateControl.addTo(map);
+                        
+                        // Añadir manejador para mostrar un marcador en la ubicación
+                        map.on('locationfound', function(e) {
+                            // Eliminar marcador anterior si existe
+                            if (window.locationMarker) {
+                                map.removeLayer(window.locationMarker);
+                            }
+                            if (window.locationCircle) {
+                                map.removeLayer(window.locationCircle);
+                            }
+                            
+                            // Crear nuevo marcador y círculo
+                            window.locationMarker = L.marker(e.latlng).addTo(map)
+                                .bindPopup('Estás aquí').openPopup();
+                            
+                            window.locationCircle = L.circle(e.latlng, {
+                                radius: e.accuracy / 2,
+                                color: '#4a80f5',
+                                fillColor: '#4a80f5',
+                                fillOpacity: 0.15
+                            }).addTo(map);
+                        });
+                    }
+                }, 1000); // Esperar 1 segundo para asegurarse de que el mapa está inicializado
+            }
+        };
+        
+        // Verificar después de que la página esté completamente cargada
+        checkAndAddLocateControl();
+    });
+    </script>
+
+<script>
+    // Script de emergencia para forzar la visualización del CAPTCHA
+    document.addEventListener('DOMContentLoaded', function() {
+        // Intentar aplicar el CAPTCHA automáticamente cada vez que se abra el formulario
+        const newReportBtn = document.getElementById('newReportBtn');
+        const sidebar = document.getElementById('sidebar');
+        
+        if (newReportBtn) {
+            newReportBtn.addEventListener('click', function() {
+                // Esperar a que el sidebar esté abierto
+                setTimeout(function() {
+                    // Forzar solicitud de nuevo CAPTCHA
+                    fetch('/api/captcha')
+                        .then(response => response.json())
+                        .then(data => {
+                            const captchaText = document.getElementById('captcha-text');
+                            const captchaHash = document.getElementById('captcha-hash');
+                            const captchaContainer = document.getElementById('captcha-container');
+                            
+                            if (captchaText && captchaHash && captchaContainer) {
+                                captchaText.textContent = data.captcha_text;
+                                captchaText.style.color = 'white';
+                                captchaHash.value = data.captcha_id;
+                                captchaContainer.style.display = 'block';
+                                
+                                console.log("CAPTCHA forzado:", data.captcha_text);
+                            }
+                        })
+                        .catch(error => console.error("Error al forzar CAPTCHA:", error));
+                }, 500);
+            });
+        }
+    });
+    </script>
+
+    <style>
+        /* Estilos para forzar la visibilidad del CAPTCHA */
+        #captcha-container {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        #captcha-text, #captcha-text-emergency, .captcha-text-visible {
+            font-family: monospace !important;
+            font-size: 1.8rem !important;
+            letter-spacing: 5px !important;
+            margin: 12px 0 !important;
+            padding: 12px 15px !important;
+            background-color: rgba(0, 0, 0, 0.3) !important;
+            border-radius: 6px !important;
+            user-select: none !important;
+            display: inline-block !important;
+            position: relative !important;
+            color: white !important;
+            cursor: pointer !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+        }
+    </style>
+    */
+
+</body>
+</html>

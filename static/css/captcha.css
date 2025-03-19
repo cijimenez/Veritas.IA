@@ -1,0 +1,172 @@
+/* Estilos para el CAPTCHA y temporizador */
+
+#captcha-container {
+    display: block !important;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#captcha-container h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: normal;    /* Cambiado de 600 a normal */
+    font-size: 1rem;        /* Tamaño estándar */
+    font-family: 'Poppins', sans-serif; /* Misma fuente que el resto de la página */
+}
+
+#captcha-container p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif; /* Misma fuente que el resto de la página */
+    font-weight: normal;
+}
+
+#captcha-text {
+    font-family: monospace;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    margin: 12px 0;
+    padding: 12px 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    user-select: none;
+    display: inline-block;
+    position: relative;
+    color: white !important; /* Forzar color blanco */
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Añadir sombra para mejor legibilidad */
+}
+
+#captcha-text::before {
+    content: '';
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05) 10px,
+        rgba(255, 255, 255, 0.02) 10px,
+        rgba(255, 255, 255, 0.02) 20px
+    );
+}
+
+#captcha-text::after {
+    content: '';
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0) 3px,
+        rgba(0, 0, 0, 0.1) 3px,
+        rgba(0, 0, 0, 0.1) 5px
+    );
+}
+
+#captcha-answer {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 12px;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#captcha-answer::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#captcha-answer:focus {
+    outline: none;
+    border-color: var(--accent-color, #4f46e5);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
+/* Tooltip para refrescar CAPTCHA */
+#captcha-text:hover::before {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#captcha-container small {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Estilos para el temporizador de cooldown */
+#cooldown-container {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 193, 7, 0.1);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cooldown-container h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgba(255, 193, 7, 0.9);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#cooldown-container p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+#cooldown-timer {
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: monospace;
+    color: rgba(255, 193, 7, 1);
+    display: inline-block;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    animation: pulse 1s infinite;
+}
+
+/* Animación para el temporizador */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Estilo para el botón deshabilitado */
+button:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Animación de entrada para el CAPTCHA */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#captcha-container, #cooldown-container {
+    animation: fadeIn 0.3s ease-out forwards;
+}

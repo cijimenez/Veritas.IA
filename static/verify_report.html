@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Reporte - Veritas.ia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="btn-back">
+            <i class="bi bi-arrow-left"></i> Volver al mapa
+        </a>
+        
+        <header class="header">
+            <h1 class="logo">Veritas<span style="color: var(--accent-color)">.ia</span></h1>
+            <p class="subtitle">Verificación de Reportes</p>
+        </header>
+        
+        <!-- Contenedor para mensaje de no autorizado -->
+        <div id="unauthorized-container" style="display: none;">
+            <div class="glass" style="padding: 30px; margin-bottom: 30px; text-align: center;">
+                <i class="bi bi-shield-lock" style="font-size: 64px; color: var(--accent-color);"></i>
+                <h2 style="color: white; margin-top: 20px;">Acceso Restringido</h2>
+                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 20px;">
+                    Esta sección está reservada para periodistas y comunicadores verificados.
+                </p>
+                <div class="d-grid gap-2" style="max-width: 300px; margin: 0 auto;">
+                    <a href="/journalist_login.html" class="btn btn-primary">Iniciar sesión</a>
+                    <a href="/journalist_register.html" class="btn btn-outline-light">Registrarse</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenedor principal para verificación -->
+        <main id="verification-container" style="display: none;">
+            <div class="glass" style="padding: 30px; margin-bottom: 30px;">
+                <h2 style="color: white; font-weight: 500; margin-bottom: 20px;">
+                    <i class="bi bi-clipboard-check"></i> Verificar Reporte
+                </h2>
+                
+                <!-- Sección con detalles del reporte -->
+                <div id="report-details" class="mb-4 p-3" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                    <h3 id="report-type" style="color: white; font-size: 1.2rem;">Tipo de reporte</h3>
+                    <p id="report-description" style="color: rgba(255, 255, 255, 0.8);">Descripción del reporte...</p>
+                    <div class="d-flex justify-content-between" style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+                        <div id="report-date">Fecha: --/--/----</div>
+                        <div id="report-location">Ubicación: -.-----, -.-----</div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de verificación -->
+                <form id="verificationForm">
+                    <input type="hidden" id="reportId" name="report_id">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Resultado de verificación</label>
+                        <div class="d-flex gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="verification_status" id="statusTrue" value="true" required>
+                                <label class="form-check-label" for="statusTrue">
+                                    <i class="bi bi-check-circle-fill" style="color: green;"></i> Verdadero
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="verification_status" id="statusFalse" value="false" required>
+                                <label class="form-check-label" for="statusFalse">
+                                    <i class="bi bi-x-circle-fill" style="color: red;"></i> Falso
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="evidenceUrl" class="form-label">URL de evidencia (opcional)</label>
+                            <input type="url" class="form-control" id="evidenceUrl" name="evidence_url" placeholder="https://...">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="organization" class="form-label">Organización / Medio</label>
+                            <input type="text" class="form-control" id="organization" name="organization" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="explanation" class="form-label">Explicación / Justificación</label>
+                        <textarea class="form-control" id="explanation" name="explanation" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="sources" class="form-label">Fuentes consultadas</label>
+                        <textarea class="form-control" id="sources" name="sources" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="d-grid gap-2 mt-4">
+                        <button type="submit" class="btn btn-primary">Enviar verificación</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <div class="notification" id="notification"></div>
+        
+        <footer style="text-align: center; margin-top: 50px; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            <p>© 2025 Veritas.ia - Reportes ciudadanos para la transparencia electoral.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Añadir justo después de document.addEventListener('DOMContentLoaded', function() {
+            console.log("Token almacenado:", localStorage.getItem('journalist_token'));
+
+
+            const journalistToken = localStorage.getItem('journalist_token');
+            const journalistData = JSON.parse(localStorage.getItem('journalist_data') || '{}');
+            const notification = document.getElementById('notification');
+            const unauthorizedContainer = document.getElementById('unauthorized-container');
+            const verificationContainer = document.getElementById('verification-container');
+            
+            // Función para mostrar notificaciones
+            function showNotification(message, type) {
+                notification.textContent = message;
+                notification.className = `notification ${type}`;
+                notification.style.display = 'block';
+                
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 5000);
+            }
+            
+            // Verificar si el usuario está autenticado
+            if (!journalistToken) {
+                unauthorizedContainer.style.display = 'block';
+                return;
+            }
+            
+            // Mostrar el contenedor de verificación
+            verificationContainer.style.display = 'block';
+            
+            // Obtener el ID del reporte de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const reportId = urlParams.get('report_id');
+            
+            if (!reportId) {
+                showNotification('ID de reporte no especificado', 'error');
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000);
+                return;
+            }
+            
+            document.getElementById('reportId').value = reportId;
+            
+            // Si tenemos datos del periodista, prellenar el campo de organización
+            if (journalistData.organization) {
+                document.getElementById('organization').value = journalistData.organization;
+            }
+            
+            // Cargar detalles del reporte
+            async function loadReportDetails() {
+                try {
+                    const response = await fetch(`/api/reports/${reportId}`);
+                    
+                    if (!response.ok) {
+                        throw new Error('Error al cargar los detalles del reporte');
+                    }
+                    
+                    const report = await response.json();
+                    
+                    // Actualizar elementos en la página
+                    document.getElementById('report-type').textContent = report.report_type;
+                    document.getElementById('report-description').textContent = report.description;
+                    document.getElementById('report-date').textContent = `Fecha: ${new Date(report.created_at).toLocaleString('es-ES')}`;
+                    document.getElementById('report-location').textContent = `Ubicación: ${report.latitude.toFixed(6)}, ${report.longitude.toFixed(6)}`;
+                    
+                } catch (error) {
+                    showNotification(`Error: ${error.message}`, 'error');
+                    console.error('Error:', error);
+                }
+            }
+            
+            // Cargar los detalles del reporte
+            loadReportDetails();
+            
+            // Manejar envío del formulario de verificación
+            const form = document.getElementById('verificationForm');
+            
+            // En el script de verify_report.html, modifica la parte del envío del formulario
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Verificar si hay un token disponible
+                const token = localStorage.getItem('journalist_token');
+                
+                if (!token) {
+                    showNotification('Debes iniciar sesión para verificar reportes', 'error');
+                    
+                    // Redirigir al inicio de sesión después de 2 segundos
+                    setTimeout(() => {
+                        window.location.href = '/journalist_login.html';
+                    }, 2000);
+                    return;
+                }
+                
+                // Recopilar datos del formulario
+                const formData = {
+                    report_id: document.getElementById('reportId').value,
+                    verification_status: document.querySelector('input[name="verification_status"]:checked').value,
+                    evidence_url: document.getElementById('evidenceUrl').value,
+                    organization: document.getElementById('organization').value,
+                    explanation: document.getElementById('explanation').value,
+                    sources: document.getElementById('sources').value
+                };
+                
+                try {
+                    // Verificar que formData tiene todos los campos requeridos
+                    console.log("Enviando datos:", formData);
+                    
+                    // Enviar datos al servidor con el token
+                    const response = await fetch('/api/verifications', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${token}` // Asegúrate de que esto sea exactamente así
+                        },
+                        body: JSON.stringify(formData),
+                    });
+
+                    // Modificar la parte donde se hace fetch (alrededor de la línea 222)
+                    console.log("Token que se enviará:", token);
+                    console.log("Cabecera Authorization:", `Bearer ${token}`);
+                    
+                    // Imprimir la respuesta completa para depuración
+                    console.log("Status:", response.status);
+                    const responseText = await response.text();
+                    console.log("Respuesta texto:", responseText);
+                    
+                    // Convertir la respuesta a JSON (solo si es JSON válido)
+                    let data;
+                    try {
+                        data = JSON.parse(responseText);
+                    } catch (e) {
+                        console.error("Error al parsear respuesta:", e);
+                        throw new Error("Respuesta del servidor no es JSON válido");
+                    }
+                    
+                    if (!response.ok) {
+                        throw new Error(data.error || `Error HTTP: ${response.status}`);
+                    }
+
+                    showNotification('Verificación enviada exitosamente', 'success');
+
+                    // Redirigir a la página principal después de 2 segundos y forzar una actualización
+                    setTimeout(() => {
+                        window.location.href = '/?refresh=true';  // Añadir parámetro para forzar actualización
+                    }, 2000);
+                    
+                } catch (error) {
+                    showNotification(`Error: ${error.message}`, 'error');
+                    console.error('Error detallado:', error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

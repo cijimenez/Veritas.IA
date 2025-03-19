@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Verificación - Veritas.ia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="btn-back">
+            <i class="bi bi-arrow-left"></i> Volver al mapa
+        </a>
+        
+        <header class="header">
+            <h1 class="logo">Veritas<span style="color: var(--accent-color)">.ia</span></h1>
+            <p class="subtitle">Detalles de Verificación</p>
+        </header>
+        
+        <main>
+            <div class="glass" style="padding: 30px; margin-bottom: 30px;">
+                <!-- Cabecera de la verificación -->
+                <div id="verification-header" class="mb-4">
+                    <div id="verification-status" class="mb-3 p-3 text-center" style="border-radius: 10px;">
+                        <!-- El estilo será establecido dinámicamente por JavaScript -->
+                        <h2 id="status-text" style="font-weight: 600; margin-bottom: 10px;">
+                            <!-- Status text will be inserted here -->
+                        </h2>
+                        <p id="verified-by" style="margin-bottom: 0;">
+                            <!-- Verification info will be inserted here -->
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Detalles del reporte original -->
+                <div class="mb-4">
+                    <h3 style="color: white; font-size: 1.3rem; font-weight: 500;">Reporte original</h3>
+                    <div id="report-details" class="p-3" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                        <h4 id="report-type" style="color: white; font-size: 1.1rem;">Tipo de reporte</h4>
+                        <p id="report-description" style="color: rgba(255, 255, 255, 0.8);">Descripción del reporte...</p>
+                        <div class="d-flex justify-content-between" style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+                            <div id="report-date">Fecha: --/--/----</div>
+                            <div id="report-location">Ubicación: -.-----, -.-----</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detalles de la verificación -->
+                <div>
+                    <h3 style="color: white; font-size: 1.3rem; font-weight: 500;">Detalles de la verificación</h3>
+                    <div class="p-3" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                        <h4 style="color: white; font-size: 1.1rem;">Explicación</h4>
+                        <p id="verification-explanation" style="color: rgba(255, 255, 255, 0.8);">Explicación de la verificación...</p>
+                        
+                        <h4 style="color: white; font-size: 1.1rem; margin-top: 15px;">Fuentes consultadas</h4>
+                        <p id="verification-sources" style="color: rgba(255, 255, 255, 0.8);">Fuentes consultadas...</p>
+                        
+                        <div id="evidence-url-container" style="margin-top: 20px;">
+                            <h4 style="color: white; font-size: 1.1rem;">Evidencia</h4>
+                            <a id="evidence-url" href="#" target="_blank" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-link-45deg"></i> Ver evidencia
+                            </a>
+                        </div>
+                        
+                        <div style="margin-top: 20px; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+                            <div id="verification-date">Verificado: --/--/----</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="notification" id="notification"></div>
+        
+        <footer style="text-align: center; margin-top: 50px; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            <p>© 2025 Veritas.ia - Reportes ciudadanos para la transparencia electoral.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const notification = document.getElementById('notification');
+            
+            // Función para mostrar notificaciones
+            function showNotification(message, type) {
+                notification.textContent = message;
+                notification.className = `notification ${type}`;
+                notification.style.display = 'block';
+                
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 5000);
+            }
+            
+            // Obtener el ID del reporte de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const reportId = urlParams.get('report_id');
+            
+            if (!reportId) {
+                showNotification('ID de reporte no especificado', 'error');
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000);
+                return;
+            }
+            
+            // Cargar detalles de la verificación
+            async function loadVerificationDetails() {
+                try {
+                    const response = await fetch(`/api/verifications/${reportId}`);
+                    
+                    if (!response.ok) {
+                        throw new Error('Error al cargar los detalles de la verificación');
+                    }
+                    
+                    const data = await response.json();
+                    const { report, verification } = data;
+                    
+                    // Actualizar elementos de reporte en la página
+                    document.getElementById('report-type').textContent = report.report_type;
+                    document.getElementById('report-description').textContent = report.description;
+                    document.getElementById('report-date').textContent = `Fecha: ${new Date(report.created_at).toLocaleString('es-ES')}`;
+                    document.getElementById('report-location').textContent = `Ubicación: ${report.latitude.toFixed(6)}, ${report.longitude.toFixed(6)}`;
+                    
+                    // Actualizar elementos de verificación
+                    document.getElementById('verification-explanation').textContent = verification.explanation;
+                    document.getElementById('verification-sources').textContent = verification.sources;
+                    document.getElementById('verification-date').textContent = `Verificado: ${new Date(verification.created_at).toLocaleString('es-ES')}`;
+                    
+                    // Configurar el encabezado de verificación según el estado
+                    const verificationStatus = document.getElementById('verification-status');
+                    const statusText = document.getElementById('status-text');
+                    
+                    if (verification.verification_status === 'true') {
+                        verificationStatus.style.backgroundColor = 'rgba(40, 167, 69, 0.15)';
+                        statusText.innerHTML = '<i class="bi bi-check-circle-fill" style="color: green;"></i> VERIFICADO COMO VERDADERO';
+                        statusText.style.color = 'green';
+                    } else {
+                        verificationStatus.style.backgroundColor = 'rgba(220, 53, 69, 0.15)';
+                        statusText.innerHTML = '<i class="bi bi-x-circle-fill" style="color: red;"></i> VERIFICADO COMO FALSO';
+                        statusText.style.color = 'red';
+                    }
+                    
+                    document.getElementById('verified-by').innerHTML = `Verificado por: <strong>${verification.journalist_name}</strong> de <strong>${verification.organization}</strong>`;
+                    
+                    // Mostrar URL de evidencia si existe
+                    if (verification.evidence_url) {
+                        document.getElementById('evidence-url').href = verification.evidence_url;
+                    } else {
+                        document.getElementById('evidence-url-container').style.display = 'none';
+                    }
+                    
+                } catch (error) {
+                    showNotification(`Error: ${error.message}`, 'error');
+                    console.error('Error:', error);
+                }
+            }
+            
+            // Cargar los detalles
+            loadVerificationDetails();
+        });
+    </script>
+</body>
+</html>

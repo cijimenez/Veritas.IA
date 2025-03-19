@@ -1,0 +1,12 @@
+# Dependencias principales
+requests==2.31.0
+PyJWT==2.8.0
+bcrypt==4.0.1
+Flask==2.3.3
+
+# Otras utilidades que podrían ser necesarias
+python-dotenv==1.0.0
+gunicorn==21.2.0
+
+# Para seguridad y codificación
+cryptography==41.0.4

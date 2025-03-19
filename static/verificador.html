@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Noticias - Veritas.ia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/verification.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="btn-back">
+            <i class="bi bi-arrow-left"></i> Volver a inicio
+        </a>
+        
+        <header class="header">
+            <h1 class="logo">Veritas<span style="color: var(--accent-color)">.ia</span></h1>
+            <p class="subtitle">Verificador de noticias electorales</p>
+        </header>
+
+        
+        <main>
+            <div class="glass form-container">
+                <h2 style="color: white; margin-bottom: 30px; font-weight: 600; text-align: center;">
+                    <i class="bi bi-shield-check" style="margin-right: 10px;"></i>
+                    Verificar información electoral
+                </h2>
+                
+                <form id="verifyForm">
+                    <div class="form-group">
+                        <label for="urlInput" class="form-label">URL de la noticia (opcional)</label>
+                        <input type="url" id="urlInput" class="form-control" placeholder="https://ejemplo.com/noticia-electoral">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contentInput" class="form-label">O ingresa el texto de la noticia</label>
+                        <textarea id="contentInput" class="form-control" placeholder="Pega aquí el contenido de la noticia que deseas verificar..." rows="6"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block" id="verifyBtn">
+                        <i class="bi bi-search"></i> Verificar información
+                    </button>
+                </form>
+                
+                <div class="loader" id="loader" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p style="color: white;">Verificando información...</p>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">Esto puede tomar hasta 30 segundos mientras consultamos fuentes confiables.</p>
+                </div>
+                
+                <div id="result" class="verification-result" style="display: none;">
+                    <!-- El resultado se mostrará aquí dinámicamente -->
+                </div>
+            </div>
+        </main>
+        
+        <footer style="text-align: center; margin-top: 50px; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            <p>© 2025 Veritas.ia - Los resultados son generados automáticamente y deben ser verificados con fuentes oficiales.</p>
+        </footer>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const verifyForm = document.getElementById('verifyForm');
+            const urlInput = document.getElementById('urlInput');
+            const contentInput = document.getElementById('contentInput');
+            const verifyBtn = document.getElementById('verifyBtn');
+            const loader = document.getElementById('loader');
+            const result = document.getElementById('result');
+            const notification = document.getElementById('notification');
+            
+            function showNotification(message, type) {
+                notification.textContent = message;
+                notification.className = `notification ${type}`;
+                notification.style.display = 'block';
+                
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 5000);
+            }
+            
+            verifyForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const url = urlInput.value.trim();
+                const content = contentInput.value.trim();
+                
+                if (!url && !content) {
+                    showNotification('Por favor, ingresa una URL o el contenido de la noticia a verificar.', 'error');
+                    return;
+                }
+                
+                // Mostrar loader y ocultar resultado anterior
+                verifyBtn.disabled = true;
+                verifyBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Verificando...';
+                loader.style.display = 'block';
+                result.style.display = 'none';
+                
+                try {
+                    console.log('Enviando solicitud de verificación...');
+                    
+                    const response = await fetch('/api/verify', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            url: url,
+                            content: content,
+                        }),
+                    });
+                    
+                    console.log('Respuesta recibida:', response.status);
+                    
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Error al verificar la información');
+                    }
+                    
+                    const data = await response.json();
+                    console.log('Verificación completada');
+                    
+                    // Formatear y mostrar resultado
+                    const verification = data.verification;
+                    console.log('Respuesta de verificación sin procesar:', verification);
+                    
+                    // Función para procesar correctamente el HTML
+                    function procesarVerificacion(html) {
+                        // Primero identificamos el estado de verificación
+                        const regexResultado = /<div class="result-badge ([^"]+)">([^<]+)<\/div>/i;
+                        const match = html.match(regexResultado);
+                        let estado = '';
+                        
+                        if (match && match.length >= 3) {
+                            estado = match[2]; // Texto del estado (ej: "No Verificado")
+                            console.log('Estado detectado:', estado);
+                            
+                            // Convertir el estado a formato de clase CSS (sin espacios, lowercase)
+                            let claseCSS = '';
+                            if (estado === 'Verificado') {
+                                claseCSS = 'verificado';
+                            } else if (estado === 'Impreciso') {
+                                claseCSS = 'impreciso';
+                            } else if (estado === 'No Verificado') {
+                                claseCSS = 'noverificado';
+                            } else if (estado === 'Falso') {
+                                claseCSS = 'falso';
+                            }
+                            
+                            // Reemplazar el div original con la clase correcta
+                            html = html.replace(
+                                regexResultado,
+                                `<div class="result-badge ${claseCSS}">${estado}</div>`
+                            );
+                        }
+                        
+                        return html;
+                    }
+                    
+                    // Procesar el HTML para usar las clases CSS correctas
+                    let formattedVerification = procesarVerificacion(verification);
+                    
+                    // Función para eliminar espacios en blanco excesivos
+                    function compactHTML(html) {
+                        return html
+                            // Eliminar espacios en blanco excesivos
+                            .replace(/\s{2,}/g, ' ')
+                            // Asegurar que no haya párrafos vacíos
+                            .replace(/<p>\s*<\/p>/gi, '')
+                            // Compactar elementos de lista
+                            .replace(/<\/li>\s*<li>/gi, '</li><li>');
+                    }
+                    
+                    // Compactar el HTML para eliminar espacios excesivos
+                    formattedVerification = compactHTML(formattedVerification);
+                    
+                    // Crear un contenedor para el resultado
+                    formattedVerification = `<div class="verification-result-container">${formattedVerification}</div>`;
+                    
+                    // Agregar estilos adicionales para compactar el contenido
+                    const additionalStyles = `
+                    <style>
+                    .verification-result-container {
+                        margin-top: 15px;
+                    }
+                    
+                    .verification-summary, 
+                    .verification-result, 
+                    .verification-details, 
+                    .verification-sources, 
+                    .verification-recommendations {
+                        margin-bottom: 12px !important;
+                        padding: 10px !important;
+                        text-align: justify !important;
+                    }
+                    
+                    .verification-report h2, 
+                    .verification-report h3, 
+                    .verification-report h4 {
+                        margin-top: 8px !important;
+                        margin-bottom: 8px !important;
+                    }
+                    
+                    .verification-report p {
+                        margin: 5px 0 !important;
+                        line-height: 1.4 !important;
+                        text-align: justify !important;
+                    }
+                    
+                    .verification-report ul, 
+                    .verification-report ol {
+                        margin: 5px 0 !important;
+                        padding-left: 20px !important;
+                    }
+                    
+                    .verification-report li {
+                        margin-bottom: 5px !important;
+                        text-align: justify !important;
+                    }
+                    
+                    /* Estilo base mejorado para todos los botones de estado */
+                    .result-badge, .status-badge {
+                        display: inline-block;
+                        padding: 10px 25px !important;
+                        border-radius: 50px;
+                        color: white !important;
+                        font-weight: 700 !important;
+                        margin: 10px auto !important;
+                        font-size: 1.2rem !important;
+                        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+                        text-align: center !important;
+                        min-width: 180px;
+                        transform: translateY(0);
+                        transition: all 0.3s ease;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        border: 2px solid transparent;
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    /* Efecto hover para todos los botones */
+                    .result-badge:hover, .status-badge:hover {
+                        transform: translateY(-3px) !important;
+                        box-shadow: 0 6px 14px rgba(0,0,0,0.4) !important;
+                    }
+
+                    /* Verificado - Verde vibrante con gradiente */
+                    .result-badge.verificado, .status-badge.verified {
+                        background: linear-gradient(135deg, #2ECC71, #27AE60) !important;
+                        border-color: #27AE60;
+                        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+                    }
+
+                    /* Impreciso - Naranja vibrante con gradiente */
+                    .result-badge.impreciso, .status-badge.partially {
+                        background: linear-gradient(135deg, #F39C12, #D35400) !important;
+                        border-color: #D35400;
+                        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+                    }
+
+                    /* No Verificado - Gris oscuro contrastante con gradiente */
+                    .result-badge.noverificado, .status-badge.unverified {
+                        background: linear-gradient(135deg, #34495E, #2C3E50) !important;
+                        border-color: #2C3E50;
+                        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+                    }
+
+                    /* Falso - Rojo vibrante con gradiente */
+                    .result-badge.falso, .status-badge.misleading {
+                        background: linear-gradient(135deg, #E74C3C, #C0392B) !important;
+                        border-color: #C0392B;
+                        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+                    }
+
+                    /* Añadir iconos por estado */
+                    .result-badge.verificado::before, .status-badge.verified::before {
+                        content: "✓ ";
+                    }
+
+                    .result-badge.impreciso::before, .status-badge.partially::before {
+                        content: "⚠ ";
+                    }
+
+                    .result-badge.noverificado::before, .status-badge.unverified::before {
+                        content: "? ";
+                    }
+
+                    .result-badge.falso::before, .status-badge.misleading::before {
+                        content: "✗ ";
+                    }
+
+                    /* Animación de destacado */
+                    @keyframes highlightPulse {
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.05); }
+                        100% { transform: scale(1); }
+                    }
+
+                    .result-badge, .status-badge {
+                        animation: highlightPulse 2s ease-in-out 1;
+                    }
+                    </style>
+                    `;
+                    
+                    // Agregar los estilos adicionales
+                    formattedVerification = additionalStyles + formattedVerification;
+                    
+                    // Formatear fuentes y recomendaciones
+                    formattedVerification = formattedVerification
+                        .replace(/Fuentes:/gi, '<strong style="color: #4CAF50;">Fuentes:</strong>')
+                        .replace(/Recomendaciones:/gi, '<strong style="color: #2196F3;">Recomendaciones:</strong>');
+                    
+                    // Mejorar formato de párrafos y listas
+                    formattedVerification = formattedVerification
+                        .replace(/\n\n/g, '</p><p>')
+                        .replace(/\n/g, '<br>')
+                        .replace(/\d+\.\s/g, match => `<br><strong>${match}</strong>`);
+                    
+                    // Aplicar formato compacto final
+                    formattedVerification = compactHTML(formattedVerification);
+                    
+                    result.innerHTML = formattedVerification;
+                    result.style.display = 'block';
+                    
+                    // Función para hacer que el botón de estado parpadee brevemente para llamar la atención
+                    function resaltarEstado() {
+                        setTimeout(() => {
+                            const estadoBadge = document.querySelector('.result-badge, .status-badge');
+                            if (estadoBadge) {
+                                // Añadir efecto de foco
+                                estadoBadge.style.transform = 'scale(1.1)';
+                                
+                                // Restaurar después de la animación
+                                setTimeout(() => {
+                                    estadoBadge.style.transform = 'scale(1)';
+                                }, 500);
+                            }
+                        }, 500);
+                    }
+                    
+                    // Resaltar el estado para llamar la atención
+                    resaltarEstado();
+                    
+                    showNotification('Verificación completada con éxito', 'success');
+                    
+                } catch (error) {
+                    console.error('Error:', error);
+                    showNotification(error.message || 'Error al verificar la información', 'error');
+                    result.innerHTML = `<p style="color: #F44336;"><i class="bi bi-exclamation-triangle"></i> Error: ${error.message || 'No se pudo verificar la información. Intenta nuevamente.'}</p>`;
+                    result.style.display = 'block';
+                } finally {
+                    loader.style.display = 'none';
+                    verifyBtn.disabled = false;
+                    verifyBtn.innerHTML = '<i class="bi bi-search"></i> Verificar información';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

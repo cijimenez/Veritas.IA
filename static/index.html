@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veritas.ia - Verificación y Reportes Electorales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Veritas<span style="color: var(--accent-color)">.ia</span></h1>
+            <p class="subtitle">Transparencia electoral para Ecuador 2025</p>
+        </header>
+        
+        <main>
+            <div class="glass" style="padding: 40px; text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 style="color: white; margin-bottom: 25px; font-weight: 600;">Bienvenido a la plataforma ciudadana</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 25px; line-height: 1.6;">
+                    Veritas.ia es una herramienta diseñada para promover la transparencia y la integridad en las elecciones del Ecuador 2025. Nuestra plataforma te permite verificar la autenticidad de noticias electorales y reportar incidentes en tiempo real.
+                </p>
+                
+                <div class="btn-container">
+                    <a href="/verificador.html" class="btn-main verificar">
+                        <i class="bi bi-shield-check"></i>
+                        Verificar Noticias
+                    </a>
+                    <a href="/reportar.html" class="btn-main reportar">
+                        <i class="bi bi-geo-alt"></i>
+                        Reportar Incidentes
+                    </a>
+                </div>
+                
+                <div style="margin-top: 50px; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
+                    <p>Contribuye a la transparencia electoral de Ecuador</p>
+                    <div style="margin-top: 15px;">
+                        <i class="bi bi-check-circle" style="margin-right: 5px;"></i> Verificación basada en IA
+                        <i class="bi bi-check-circle" style="margin-left: 15px; margin-right: 5px;"></i> Reportes georreferenciados
+                        <i class="bi bi-check-circle" style="margin-left: 15px; margin-right: 5px;"></i> Información en tiempo real
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer style="text-align: center; margin-top: 50px; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            <p>© 2025 Veritas.ia - Plataforma ciudadana de verificación electoral</p>
+        </footer>
+    </div>
+
+    // Agregar este script al final de index.html
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Observar cambios en el DOM para detectar cuando se abre un popup
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+                // Buscar elementos de popup que acaban de ser añadidos
+                const popups = document.querySelectorAll('.leaflet-popup-content');
+                popups.forEach(function(popup) {
+                    // Verificar si ya tiene el botón
+                    if (!popup.querySelector('.verify-btn') && !popup.querySelector('[href*="verify_report.html"]')) {
+                        // Extraer ID del reporte si existe en los botones de voto
+                        const voteBtn = popup.querySelector('.vote-btn');
+                        if (voteBtn) {
+                            const reportId = voteBtn.getAttribute('data-report-id');
+                            if (reportId) {
+                                // Crear contenedor para el botón
+                                const btnContainer = document.createElement('div');
+                                btnContainer.style.marginTop = '10px';
+                                btnContainer.style.width = '100%';
+                                
+                                // Crear el botón
+                                btnContainer.innerHTML = `
+                                    <a href="/verify_report.html?report_id=${reportId}" class="btn btn-primary verify-btn" style="display: block; width: 100%; text-align: center; padding: 5px; text-decoration: none; background-color: #007bff; color: white; border-radius: 5px;">
+                                        <i class="bi bi-clipboard-check"></i> Verificar reporte
+                                    </a>
+                                `;
+                                
+                                // Añadir al final de la ventana emergente
+                                popup.appendChild(btnContainer);
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    });
+    
+    // Observar cambios en el cuerpo del documento
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+
+
+
+</body>
+</html>

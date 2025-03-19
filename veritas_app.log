@@ -1,0 +1,1516 @@
+2025-03-15 19:05:30,436 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 19:05:30,766 - veritas-ia - WARNING - La API de Perplexity no está funcionando correctamente.
+2025-03-15 19:05:30,767 - veritas-ia - WARNING - El verificador de noticias podría no funcionar. Revisa la clave API.
+2025-03-15 19:05:30,768 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 19:05:38,946 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:38] "GET / HTTP/1.1" 200 -
+2025-03-15 19:05:39,594 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:39] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:05:41,037 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:41] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:05:42,037 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:42] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-15 19:05:42,569 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:42] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:05:42,800 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:42] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:05:45,218 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:45] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:05:46,137 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:46] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 19:05:46,412 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:46] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:05:46,705 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:46] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 19:05:47,099 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 19:05:47,100 - veritas-ia - INFO - Devolviendo 0 reportes activos
+2025-03-15 19:05:47,544 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:05:47] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:06:02,978 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:02] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 19:06:03,066 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:03] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:06:03,207 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:03] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 19:06:04,164 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:04] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 19:06:04,164 - veritas-ia - INFO - Devolviendo 0 reportes activos
+2025-03-15 19:06:04,420 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:04] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:06:05,788 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:05] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 19:06:05,788 - veritas-ia - INFO - Devolviendo 0 reportes activos
+2025-03-15 19:06:27,586 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:27] "POST /api/reports HTTP/1.1" 201 -
+2025-03-15 19:06:27,589 - veritas-ia - INFO - Reporte creado con ID 1 de tipo intimidacion
+2025-03-15 19:06:53,658 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:53] "GET / HTTP/1.1" 200 -
+2025-03-15 19:06:53,683 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:53] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:06:54,282 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:54] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:06:55,333 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:55] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-15 19:06:55,403 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:55] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:06:56,008 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:06:56] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:07:17,552 - veritas-ia - ERROR - Error en la verificación: name 'verification_cache' is not defined
+2025-03-15 19:07:17,552 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:07:17] "POST /api/verify HTTP/1.1" 500 -
+2025-03-15 19:07:17,553 - veritas-ia - ERROR - Error del servidor: name 'verification_cache' is not defined
+2025-03-15 19:08:45,102 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 19:08:45,102 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 19:13:33,734 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 19:13:34,096 - veritas-ia - WARNING - La API de Perplexity no está funcionando correctamente.
+2025-03-15 19:13:34,096 - veritas-ia - WARNING - El verificador de noticias podría no funcionar. Revisa la clave API.
+2025-03-15 19:13:34,097 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 19:13:38,287 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:38] "GET / HTTP/1.1" 200 -
+2025-03-15 19:13:38,557 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:38] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:13:40,362 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:40] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 19:13:40,473 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:40] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:13:40,724 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:40] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:13:41,024 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:41] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 19:13:41,394 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:41] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 19:13:41,395 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 19:13:41,575 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:41] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:13:55,267 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:13:55] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:14:11,128 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 19:14:11,128 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 19:16:23,245 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 19:16:25,167 - veritas-ia - WARNING - La API de Perplexity no está funcionando correctamente.
+2025-03-15 19:16:25,167 - veritas-ia - WARNING - El verificador de noticias podría no funcionar. Revisa la clave API.
+2025-03-15 19:16:25,167 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 19:16:29,928 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 19:16:29,928 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 19:17:05,541 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 19:17:07,293 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 19:17:07,293 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 19:17:12,312 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:12] "GET / HTTP/1.1" 200 -
+2025-03-15 19:17:12,563 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:12] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:17:13,887 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:13] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-15 19:17:14,544 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:14] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:17:14,545 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:17:14,839 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:17:25,952 - veritas-ia - ERROR - Error en la verificación: name 'verification_cache' is not defined
+2025-03-15 19:17:25,952 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:25] "POST /api/verify HTTP/1.1" 500 -
+2025-03-15 19:17:25,952 - veritas-ia - ERROR - Error del servidor: name 'verification_cache' is not defined
+2025-03-15 19:17:29,442 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:17:29] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:19:35,403 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 19:19:35,403 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 19:19:36,403 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 19:19:37,699 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 19:19:37,699 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 19:19:40,116 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:19:40] "GET / HTTP/1.1" 200 -
+2025-03-15 19:19:40,592 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:19:40] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:19:42,389 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:19:42] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:19:47,693 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:19:47] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-15 19:19:48,227 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:19:48] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 19:19:48,609 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:19:48] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 19:19:51,243 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-15 19:20:05,283 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-15 19:20:05,284 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-15 19:20:05,284 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 19:20:05] "POST /api/verify HTTP/1.1" 200 -
+2025-03-15 19:22:27,960 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 19:22:27,962 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:09:42,873 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:09:44,270 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:09:44,271 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:09:49,764 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:49] "GET / HTTP/1.1" 200 -
+2025-03-15 23:09:49,928 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:49] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:09:51,096 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:51] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:09:52,131 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:52] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:09:52,193 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:52] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:09:52,364 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:52] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:09:52,474 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:52] "GET /js/captcha.js HTTP/1.1" 200 -
+2025-03-15 23:09:52,475 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:52] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:09:52,691 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:52] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:09:52,692 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:09:53,272 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:09:53] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:10:32,322 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:10:32] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:10:32,323 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:10:53,793 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:10:53,793 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:16:12,180 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:16:13,533 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:16:13,534 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:16:17,913 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:17] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:16:17,943 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:17] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:16:18,152 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:18] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:16:18,226 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:18] "GET /js/captcha.js HTTP/1.1" 200 -
+2025-03-15 23:16:18,228 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:18] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:16:18,698 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:18] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:16:18,699 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:16:18,731 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:18] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:16:43,011 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:43] "GET / HTTP/1.1" 200 -
+2025-03-15 23:16:43,298 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:43] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:16:43,598 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:43] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:16:44,393 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:44] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:16:44,682 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:44] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:16:44,712 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:44] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:16:44,713 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:44] "GET /js/captcha.js HTTP/1.1" 200 -
+2025-03-15 23:16:44,716 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:44] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:16:45,133 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:45] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:16:45,133 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:16:45,139 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:16:45] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:17:09,188 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:17:09,188 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:17:56,160 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:17:57,493 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:17:57,495 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:18:00,281 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:18:00,311 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:18:00,509 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:18:00,599 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /js/captcha.js HTTP/1.1" 200 -
+2025-03-15 23:18:00,600 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:18:00,898 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:18:00,899 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:18:00,908 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:18:08,188 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:18:08,189 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:18:09,108 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:18:19,837 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:18:21,167 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:18:21,168 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:18:29,497 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:18:29] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-15 23:18:29,498 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-15 23:21:00,828 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:21:00] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:21:00,829 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:24:01,119 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:24:01] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:24:01,120 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:25:59,223 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:25:59,223 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:26:00,918 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:26:02,236 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:26:02,237 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:26:05,912 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:05] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:26:05,933 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:05] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:26:06,149 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:06] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:26:06,232 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:06] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:26:06,738 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:06] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:26:06,739 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:26:06,768 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:06] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:26:22,785 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:22] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:26:23,075 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:26:23] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:29:06,155 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:29:06] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:29:06,155 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:30:39,453 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:30:39,454 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:30:41,014 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:30:42,769 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:30:42,769 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:30:45,658 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:30:45] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:30:45,693 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:30:45] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:30:45,892 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:30:45] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:30:45,969 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:30:45] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:30:46,616 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:30:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:30:46,617 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:30:46,646 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:30:46] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:31:01,101 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:31:01] "POST /api/reports HTTP/1.1" 400 -
+2025-03-15 23:31:01,102 - veritas-ia - WARNING - Error del cliente: Se requiere completar el CAPTCHA
+2025-03-15 23:33:46,982 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:33:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:33:46,983 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:36:46,259 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:36:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:36:46,261 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:39:48,144 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:39:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:39:48,145 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:41:57,524 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:41:57,526 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:41:59,021 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:42:03,271 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:42:03,271 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:42:05,983 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:42:05] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:42:06,151 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:42:06] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:42:06,228 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:42:06] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:42:06,432 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:42:06] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:42:07,207 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:42:07] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:42:07,207 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:42:07,296 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:42:07] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:44:16,323 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-15 23:44:16,331 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-15 23:48:41,247 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-15 23:48:42,703 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-15 23:48:42,704 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-15 23:48:45,836 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:45] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-15 23:48:45,884 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:45] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:48:46,080 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:46] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:48:46,170 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:46] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-15 23:48:46,888 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:48:46,889 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:48:46,890 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:46] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-15 23:48:46,890 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-15 23:48:46,919 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:46] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-15 23:48:48,084 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:48] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-15 23:48:48,378 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:48:48] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-15 23:51:46,583 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:51:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:51:46,584 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:54:48,341 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:54:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:54:48,341 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-15 23:55:36,794 - veritas-ia - INFO - 127.0.0.1 - - [15/Mar/2025 23:55:36] "GET /api/reports HTTP/1.1" 200 -
+2025-03-15 23:55:36,795 - veritas-ia - INFO - Devolviendo 1 reportes activos
+2025-03-16 00:02:56,997 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:02:56] "POST /api/reports HTTP/1.1" 400 -
+2025-03-16 00:02:56,998 - veritas-ia - WARNING - Error del cliente: CAPTCHA expirado, solicita uno nuevo
+2025-03-16 00:02:57,241 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:02:57] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 00:02:57,242 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 00:03:14,013 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:03:14] "POST /api/reports HTTP/1.1" 201 -
+2025-03-16 00:03:14,014 - veritas-ia - INFO - Reporte creado con ID 2 de tipo compra_votos
+2025-03-16 00:03:48,899 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:03:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 00:03:48,900 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 00:06:48,639 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:06:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 00:06:48,640 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 00:09:47,908 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:09:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 00:09:47,910 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 00:12:47,199 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:12:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 00:12:47,200 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 00:13:19,307 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 00:13:19] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 00:13:19,307 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:12:47,643 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:12:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:12:47,654 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:15:49,322 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:15:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:15:49,323 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:18:48,837 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:18:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:18:48,838 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:21:48,326 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:21:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:21:48,327 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:24:47,688 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:24:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:24:47,690 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:27:49,336 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:27:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:27:49,337 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:30:48,738 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:30:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:30:48,740 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:33:48,441 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:33:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:33:48,442 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:36:47,933 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:36:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:36:47,933 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:39:47,184 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:39:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:39:47,185 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:42:49,057 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:42:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:42:49,058 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:45:48,569 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:45:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:45:48,570 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:48:48,146 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:48:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:48:48,146 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:51:47,434 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:51:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:51:47,435 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:54:46,880 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:54:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:54:46,880 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 03:57:49,087 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 03:57:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 03:57:49,088 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:00:48,882 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:00:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:00:48,883 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:03:48,096 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:03:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:03:48,096 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:06:47,601 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:06:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:06:47,603 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:09:47,098 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:09:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:09:47,099 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:12:49,096 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:12:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:12:49,098 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:15:48,907 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:15:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:15:48,908 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:18:48,598 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:18:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:18:48,598 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:21:47,984 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:21:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:21:47,985 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:24:47,630 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:24:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:24:47,631 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:27:47,279 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:27:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:27:47,279 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:30:46,737 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:30:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:30:46,738 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:33:49,101 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:33:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:33:49,102 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:36:48,704 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:36:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:36:48,705 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:39:48,348 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:39:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:39:48,348 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:42:48,561 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:42:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:42:48,562 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:45:49,220 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:45:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:45:49,221 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:48:48,803 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:48:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:48:48,804 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:51:49,202 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:51:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:51:49,203 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:54:48,912 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:54:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:54:48,913 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 04:57:49,255 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 04:57:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 04:57:49,256 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:00:49,229 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:00:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:00:49,229 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:03:49,238 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:03:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:03:49,239 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:06:49,242 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:06:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:06:49,242 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:09:49,256 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:09:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:09:49,257 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:12:49,233 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:12:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:12:49,234 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:15:49,233 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:15:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:15:49,234 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:18:49,243 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:18:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:18:49,244 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:21:49,250 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:21:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:21:49,251 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:24:49,240 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:24:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:24:49,241 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:27:49,244 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:27:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:27:49,244 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:30:49,205 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:30:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:30:49,206 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:33:49,248 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:33:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:33:49,249 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:36:49,238 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:36:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:36:49,241 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:39:49,236 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:39:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:39:49,237 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:42:49,237 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:42:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:42:49,237 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:45:49,226 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:45:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:45:49,226 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:48:49,245 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:48:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:48:49,246 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:51:49,214 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:51:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:51:49,215 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:54:49,250 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:54:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:54:49,251 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 05:57:49,263 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 05:57:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 05:57:49,264 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 06:00:49,203 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 06:00:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 06:00:49,204 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 06:03:49,237 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 06:03:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 06:03:49,238 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 06:06:49,167 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 06:06:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 06:06:49,168 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 06:09:49,176 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 06:09:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 06:09:49,177 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 06:12:49,200 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 06:12:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 06:12:49,201 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 10:39:52,510 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:39:52] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:39:52,513 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 10:41:34,745 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 10:41:34,761 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 10:41:52,059 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 10:41:53,393 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 10:41:53,394 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 10:42:12,184 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:12] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 10:42:12,813 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:12] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:42:12,815 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:12] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 10:42:12,816 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:12] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 10:42:14,078 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:14] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:42:14,079 - veritas-ia - INFO - Devolviendo 2 reportes activos
+2025-03-16 10:42:14,464 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:14] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:42:14,465 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:42:14,727 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:42:48,816 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:42:48] "POST /api/reports HTTP/1.1" 201 -
+2025-03-16 10:42:48,817 - veritas-ia - INFO - Reporte creado con ID 3 de tipo compra_votos
+2025-03-16 10:45:13,512 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:13] "GET / HTTP/1.1" 200 -
+2025-03-16 10:45:13,515 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:13] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:45:13,515 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 10:45:13,786 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:13] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:45:14,287 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:45:22,688 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:22] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 10:45:22,773 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:22] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:45:22,963 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:22] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 10:45:23,077 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:23] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 10:45:23,517 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:23] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:45:23,518 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 10:45:23,841 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:23] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:45:23,841 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:45:23,874 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:45:23] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:46:21,180 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:46:21] "GET /api/report_status HTTP/1.1" 200 -
+2025-03-16 10:46:21,432 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:46:21] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:46:21,433 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:46:21,496 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:46:21] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:46:21,496 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:47:44,660 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:44] "GET / HTTP/1.1" 200 -
+2025-03-16 10:47:44,729 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:44] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:47:45,407 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:45] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:47:46,860 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:46] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-16 10:47:46,963 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:46] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:47:47,594 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:47] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:47:59,969 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:47:59] "GET / HTTP/1.1" 200 -
+2025-03-16 10:48:00,059 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:00] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:48:00,696 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:48:02,414 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:02] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 10:48:02,688 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:02] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:48:02,756 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:02] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 10:48:02,835 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:02] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 10:48:03,210 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:03] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:48:03,211 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 10:48:03,527 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:03] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:48:03,527 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:48:03,573 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:03] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:48:11,006 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:11] "GET / HTTP/1.1" 200 -
+2025-03-16 10:48:11,111 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:11] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:48:11,766 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:11] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:48:31,323 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:31] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 10:48:31,432 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:31] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:48:31,600 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:31] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 10:48:31,757 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:31] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 10:48:32,442 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:32] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:48:32,443 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 10:48:32,444 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:32] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:48:32,444 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:48:32,490 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:48:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:50:35,540 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:35] "GET / HTTP/1.1" 200 -
+2025-03-16 10:50:35,689 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:35] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:50:36,351 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:36] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:50:41,974 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:41] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 10:50:42,104 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:42] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:50:42,229 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:42] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 10:50:42,424 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:42] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 10:50:41,957 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:41] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:50:41,958 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 10:50:41,958 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:41] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:50:41,959 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:50:41,985 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:50:41] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 10:51:18,531 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:51:18] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 10:51:18,532 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 10:51:52,124 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 10:51:52,124 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 10:57:31,634 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 10:57:33,575 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 10:57:33,576 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 10:57:45,324 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:57:45] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 10:57:45,860 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:57:45] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 10:57:45,862 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:57:45] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 10:57:45,867 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:57:45] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 10:57:46,754 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:57:46] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 10:57:46,754 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 10:57:47,222 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 10:57:47] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 11:00:54,375 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 11:00:54,377 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 11:00:55,686 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 11:00:57,907 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 11:00:57,908 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 11:01:02,491 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:01:02] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 11:01:02,537 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:01:02] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 11:01:02,910 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:01:02] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 11:01:03,001 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:01:03] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 11:01:03,768 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:01:03] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:01:03,771 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:01:03,838 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:01:03] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 11:02:16,119 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:16] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 11:02:16,174 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:16] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 11:02:16,373 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:16] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 11:02:16,499 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:16] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 11:02:17,243 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:17] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:02:17,244 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:02:17,492 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:17] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 11:02:24,506 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:24] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 11:02:24,549 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:24] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 11:02:24,766 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:24] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 11:02:24,873 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:24] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 11:02:25,538 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:25] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:02:25,539 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:02:25,571 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:25] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 11:02:47,803 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:02:47] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 11:02:47,804 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 11:03:13,704 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:03:13] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 11:03:14,024 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:03:14] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 11:03:14,067 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:03:14] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 11:03:14,069 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:03:14] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 11:03:14,862 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:03:14] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:03:14,862 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:03:14,940 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:03:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 11:06:15,400 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:06:15] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:06:15,403 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:09:15,143 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:09:15] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:09:15,146 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:12:15,001 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 11:12:15] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 11:12:15,002 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 11:14:41,252 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 11:14:41,254 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 11:15:55,529 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 11:15:55,659 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 11:15:55,660 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 11:16:00,500 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 11:16:00,500 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:07:06,435 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:07:08,102 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:07:08,103 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:07:41,491 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:41] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:07:41,494 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:41] "GET / HTTP/1.1" 200 -
+2025-03-16 17:07:41,494 - veritas-ia - ERROR - Error en solicitud GET: [Errno 32] Broken pipe
+2025-03-16 17:07:41,495 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:41] "GET / HTTP/1.1" 500 -
+2025-03-16 17:07:42,169 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:42] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:07:42,171 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:42] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:07:42,172 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:42] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:07:43,240 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:43] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:07:43,242 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:07:43,739 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:07:43] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:08:14,703 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:14] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:08:14,703 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:08:24,571 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:24] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:08:24,613 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:24] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:08:24,848 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:24] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:08:24,948 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:24] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:08:25,675 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:25] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:08:25,676 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:08:25,726 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:08:25] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:09:57,996 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:09:57] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:09:58,310 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:09:58] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:09:58,374 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:09:58] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:09:58,376 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:09:58] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:09:59,060 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:09:59] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:09:59,061 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:09:59,104 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:09:59] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:11:23,912 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:11:23,913 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:11:25,751 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:11:27,281 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:11:27,281 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:11:30,952 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:30] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:11:30,983 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:30] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:11:31,205 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:31] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:11:31,298 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:31] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:11:31,957 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:31] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:11:31,957 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:11:32,010 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:11:33,603 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:33] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:11:34,209 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:34] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:11:34,232 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:34] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:11:34,289 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:34] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:11:34,590 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:34] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:11:34,590 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:11:35,142 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:11:35] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:11:44,247 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:11:44,251 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:13:41,706 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:13:43,616 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:13:43,616 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:13:48,751 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:48] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:13:48,800 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:48] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:13:49,023 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:49] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:13:49,120 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:49] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:13:49,827 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:13:49,827 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:13:49,865 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:49] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:13:53,354 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:53] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:13:53,386 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:53] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:13:53,621 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:53] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:13:53,717 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:53] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:13:54,377 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:54] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:13:54,377 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:13:54,412 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:13:54] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:14:10,152 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:14:10] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:14:10,153 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:14:14,019 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:14:14] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:14:14,020 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:16:55,569 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:16:55] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:16:55,573 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:19:55,421 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:19:55] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:19:55,423 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:22:55,258 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:22:55] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:22:55,260 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:23:38,672 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:23:38,674 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:23:39,029 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:23:40,673 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:23:40,674 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:23:43,810 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:23:43] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:23:44,036 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:23:44] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:23:44,066 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:23:44] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:23:44,357 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:23:44] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:23:45,298 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:23:45] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:23:45,299 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:23:45,412 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:23:45] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:24:10,698 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:10] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:24:11,430 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:11] "GET / HTTP/1.1" 200 -
+2025-03-16 17:24:11,762 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:11] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:24:12,455 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:12] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:24:12,834 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:12] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:24:13,169 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:13] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:24:13,257 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:13] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:24:13,259 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:13] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:24:14,432 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:14] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:24:14,433 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:24:14,702 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:24:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:25:13,738 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:25:13] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:25:13,739 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:25:59,652 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:25:59] "GET / HTTP/1.1" 200 -
+2025-03-16 17:25:59,737 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:25:59] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:26:00,687 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:26:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:26:36,287 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:26:36,287 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:28:17,705 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:28:19,285 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:28:19,286 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:28:24,256 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:24] "GET / HTTP/1.1" 200 -
+2025-03-16 17:28:24,292 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:24] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:28:25,187 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:25] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:28:26,621 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:26] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:28:26,710 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:26] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:28:26,899 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:26] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:28:27,040 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:27] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:28:28,110 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:28] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:28:28,110 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:28:28,160 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:28] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:28:38,756 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:38] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:28:38,756 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:28:40,010 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:28:40] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:28:40,011 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:29:05,610 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:29:05] "GET / HTTP/1.1" 200 -
+2025-03-16 17:29:07,333 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:29:07] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:29:09,674 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:29:09] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:30:27,126 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:30:27] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:30:27,670 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:30:27] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:30:27,990 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:30:27] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:30:27,991 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:30:27] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:30:28,443 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:30:28] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:30:28,444 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:30:28,718 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:30:28] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:32:21,350 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:32:21] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:32:21,351 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:32:24,467 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:32:24,468 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:35:13,580 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:35:15,243 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:35:15,243 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:35:32,183 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:32] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:35:32,189 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:35:32,600 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:32] "GET / HTTP/1.1" 200 -
+2025-03-16 17:35:32,919 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:32] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:35:33,705 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:33] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:35:34,078 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:34] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:35:34,401 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:34] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:35:34,501 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:34] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:35:34,503 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:34] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:35:35,232 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:35] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:35:35,233 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:35:35,271 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:35:35] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:38:35,070 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:38:35] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:38:35,071 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:41:34,485 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:41:34] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:41:34,487 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:42:09,373 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:42:09,373 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:42:11,339 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:42:13,116 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:42:13,117 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:42:16,090 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:16] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:42:16,153 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:16] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:42:16,359 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:16] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:42:16,489 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:16] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:42:17,354 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:17] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:42:17,354 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:42:17,402 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:17] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:42:21,990 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:21] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:42:22,318 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:22] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:42:22,359 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:22] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:42:22,361 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:22] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:42:23,058 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:23] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:42:23,059 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:42:23,097 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:42:23] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:42:35,914 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:42:35,915 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:47:24,465 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:47:26,403 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:47:26,404 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:47:51,862 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:47:51,864 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:47:53,107 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:47:54,748 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:47:54,750 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:48:02,979 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:02] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:48:04,117 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:04] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:48:04,449 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:04] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:48:04,516 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:04] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:48:04,518 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:04] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:48:05,237 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:05] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:48:05,239 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:48:05,301 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:48:05] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:48:26,220 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:48:26,221 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:50:13,381 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:50:15,480 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:50:15,480 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:51:06,605 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:51:06] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:51:06,606 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:54:06,211 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:54:06] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:54:06,212 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:56:26,550 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-16 17:56:26,560 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-16 17:56:27,885 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-16 17:56:29,287 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-16 17:56:29,287 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-16 17:56:49,589 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:49] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:56:49,591 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:49] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:56:50,468 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:50] "GET / HTTP/1.1" 200 -
+2025-03-16 17:56:50,789 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:50] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:56:51,538 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:51] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:56:56,342 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:56] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:56:56,672 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:56] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:56:56,764 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:56] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:56:56,765 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:56] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:56:57,462 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:57] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:56:57,463 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:56:57,505 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:57] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:56:58,106 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:56:58] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:56:58,107 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:57:02,359 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:02] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-16 17:57:02,393 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:02] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-16 17:57:02,626 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:02] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-16 17:57:02,716 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:02] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-16 17:57:03,430 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:03] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 17:57:03,431 - veritas-ia - INFO - Devolviendo 3 reportes activos
+2025-03-16 17:57:03,483 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:03] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-16 17:57:13,365 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:13] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:57:13,365 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:57:47,803 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:47] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-16 17:57:47,803 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-16 17:57:59,982 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 17:57:59] "POST /api/reports HTTP/1.1" 201 -
+2025-03-16 17:57:59,983 - veritas-ia - INFO - Reporte creado con ID 4 de tipo manipulacion
+2025-03-16 18:00:03,709 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 18:00:03] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 18:00:03,710 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-16 18:01:54,439 - veritas-ia - INFO - 127.0.0.1 - - [16/Mar/2025 18:01:54] "GET /api/reports HTTP/1.1" 200 -
+2025-03-16 18:01:54,440 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:25:27,731 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 16:25:29,334 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 16:25:29,335 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 16:25:34,099 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:34] "GET / HTTP/1.1" 200 -
+2025-03-17 16:25:35,206 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:35] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 16:25:41,391 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:41] "GET / HTTP/1.1" 200 -
+2025-03-17 16:25:41,460 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:41] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 16:25:42,414 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:42] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 16:25:44,556 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:44] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 16:25:44,645 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:44] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 16:25:44,818 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:44] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 16:25:45,207 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:45] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 16:25:46,877 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:25:46,882 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:25:47,396 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:25:47] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 16:26:14,067 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:26:14] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-17 16:26:14,068 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-17 16:28:47,163 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:28:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:28:47,165 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:31:46,964 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:31:46] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:31:46,965 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:34:47,330 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:34:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:34:47,331 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:37:47,076 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:37:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:37:47,078 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:40:47,010 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:40:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:40:47,013 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:43:47,434 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 16:43:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 16:43:47,436 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 16:44:25,903 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 16:44:25,904 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 17:30:40,689 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 17:30:42,383 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 17:30:42,384 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 17:30:47,951 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:30:47] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 17:30:48,315 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:30:48] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 17:30:48,317 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:30:48] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 17:30:48,636 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:30:48] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 17:30:49,761 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:30:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:30:49,763 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 17:30:49,873 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:30:49] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 17:31:08,325 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:08] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 17:31:08,650 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:08] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 17:31:08,680 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:08] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 17:31:08,681 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:08] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 17:31:09,067 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:09] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:31:09,067 - veritas-ia - INFO - Devolviendo 4 reportes activos
+2025-03-17 17:31:09,095 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:09] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 17:31:43,654 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:43] "GET /api/captcha HTTP/1.1" 200 -
+2025-03-17 17:31:43,655 - veritas-ia - INFO - CAPTCHA generado para IP 127.0.0.1
+2025-03-17 17:31:49,722 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:31:49] "POST /api/reports HTTP/1.1" 201 -
+2025-03-17 17:31:49,722 - veritas-ia - INFO - Reporte creado con ID 5 de tipo manipulacion
+2025-03-17 17:34:08,975 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:34:08] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:34:08,977 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:37:09,571 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:37:09] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:37:09,575 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:40:10,150 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:40:10] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:40:10,161 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:43:09,129 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:43:09] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:43:09,130 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:46:47,090 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:46:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:46:47,091 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:49:30,630 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 17:49:30,632 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 17:49:39,065 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 17:49:40,697 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 17:49:40,697 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 17:49:41,742 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:41] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:49:41,743 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:49:43,293 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:43] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 17:49:43,619 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:43] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 17:49:43,928 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:43] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 17:49:43,930 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:43] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 17:49:45,054 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:45] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:49:45,055 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:49:45,189 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:49:45] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 17:50:02,714 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:50:02] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:50:02,715 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:51:27,456 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 17:51:27,457 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 17:51:31,397 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 17:51:33,009 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 17:51:33,009 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 17:51:58,395 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:51:58] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 17:51:58,431 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:51:58] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 17:51:58,657 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:51:58] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 17:51:58,760 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:51:58] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 17:51:59,119 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:51:59] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:51:59,119 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:51:59,179 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:51:59] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 17:52:09,807 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:52:09] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 17:52:10,125 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:52:10] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 17:54:46,379 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:54:46] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 17:54:46,905 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:54:46] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 17:54:46,907 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:54:46] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 17:54:47,967 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:54:47] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 17:54:48,544 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:54:48] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:54:48,552 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:54:48,682 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:54:48] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 17:57:49,268 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 17:57:49] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 17:57:49,289 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 17:57:54,466 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 17:57:54,467 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 18:01:43,196 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 18:01:44,997 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 18:01:44,998 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 18:03:08,918 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:03:08] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 18:03:09,458 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:03:09] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:03:09,461 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:03:09] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 18:03:09,462 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:03:09] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 18:03:10,108 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:03:10] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 18:03:10,109 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 18:03:10,533 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:03:10] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:06:09,879 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:06:09] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 18:06:09,880 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 18:07:30,834 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 18:07:30,835 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 18:07:32,063 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 18:07:33,742 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 18:07:33,743 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 18:07:40,248 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:07:40] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 18:07:40,392 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:07:40] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:07:40,504 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:07:40] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 18:07:40,710 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:07:40] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 18:07:41,654 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:07:41] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 18:07:41,654 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 18:07:41,747 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:07:41] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:10:41,862 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:10:41] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 18:10:41,866 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 18:10:41,980 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 18:10:41,981 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 18:11:11,466 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 18:11:13,052 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 18:11:13,053 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 18:11:16,886 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:16] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 18:11:17,172 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:17] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:11:17,185 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:17] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 18:11:17,541 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:17] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 18:11:17,544 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:17] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 18:11:18,632 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:18] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 18:11:18,632 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 18:11:18,725 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:11:18] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:11:53,778 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 18:11:53,778 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 18:12:28,420 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 18:12:30,102 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 18:12:30,103 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 18:12:39,465 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:39] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 18:12:39,511 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:39] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:12:39,730 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:39] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 18:12:39,826 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:39] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 18:12:39,827 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:39] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 18:12:40,625 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:40] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 18:12:40,626 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 18:12:40,688 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:40] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:12:51,046 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:51] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-17 18:12:51,374 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:51] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:12:52,518 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:12:52] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:15:03,864 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:03] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 18:15:03,956 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:03] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:15:04,760 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:04] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:15:08,212 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:08] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 18:15:08,306 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:08] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:15:08,981 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:08] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:15:16,155 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:16] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 18:15:16,236 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:16] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 18:15:16,945 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 18:15:16] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 18:15:34,670 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 18:15:34,672 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 23:46:37,589 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 23:46:39,026 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 23:46:39,027 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 23:46:54,134 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:46:54] "GET / HTTP/1.1" 200 -
+2025-03-17 23:46:54,546 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:46:54] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:46:55,081 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:46:55] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:46:59,943 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:46:59] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 23:47:00,050 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:00] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:47:00,203 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:00] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 23:47:00,362 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:00] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 23:47:00,365 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:00] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 23:47:00,857 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:00] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 23:47:00,858 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 23:47:00,919 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:47:21,080 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:21] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-17 23:47:21,186 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:21] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:47:21,524 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:21] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:47:25,624 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:25] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:47:26,140 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:26] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:47:27,655 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:27] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:47:32,174 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:32] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:47:32,484 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:32] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:47:32,937 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:47:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:47:51,295 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 23:47:51,296 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 23:50:37,022 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 23:50:38,374 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 23:50:38,374 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 23:50:43,844 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:43] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:50:43,882 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:43] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:50:44,848 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:44] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:50:47,611 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:47] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:50:47,924 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:47] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:50:48,251 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:48] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:50:51,867 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:51] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:50:52,178 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:52] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:50:52,506 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:50:52] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:51:05,653 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:51:05] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:51:05,949 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:51:05] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:51:06,263 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:51:06] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:52:46,291 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 23:52:46,292 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 23:52:47,328 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 23:52:50,118 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 23:52:50,119 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 23:52:53,179 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:52:53] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:52:53,215 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:52:53] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:52:53,477 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:52:53] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:52:59,401 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:52:59] "GET /journalist_login.html HTTP/1.1" 200 -
+2025-03-17 23:52:59,472 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:52:59] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:52:59,781 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:52:59] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:01,102 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 23:53:01,191 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:01,355 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 23:53:01,449 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 23:53:01,450 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 23:53:01,575 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 23:53:01,576 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 23:53:01,903 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:01] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:07,838 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:07] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-17 23:53:08,147 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:08] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:08,566 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:08] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:12,965 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:12] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:53:13,260 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:13] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:13,767 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:13] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:19,929 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:19] "GET /journalist_login.html HTTP/1.1" 200 -
+2025-03-17 23:53:20,225 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:20] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:20,701 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:20] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:25,116 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 23:53:25,416 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:25,463 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 23:53:25,464 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 23:53:25,465 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 23:53:25,939 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 23:53:25,940 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 23:53:25,945 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:25] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:32,036 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:32] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-17 23:53:32,336 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:32] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:32,837 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:33,629 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:33] "GET /journalist_login.html HTTP/1.1" 200 -
+2025-03-17 23:53:33,927 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:33] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:53:34,654 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:53:34] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:53:45,619 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-17 23:53:45,620 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-17 23:56:55,854 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-17 23:56:57,528 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-17 23:56:57,529 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-17 23:57:04,581 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:04] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 23:57:04,637 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:04] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:57:04,839 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:04] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 23:57:04,944 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:04] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 23:57:04,945 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:04] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 23:57:05,629 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:05] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 23:57:05,629 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 23:57:05,687 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:05] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:57:11,842 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:11] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-17 23:57:12,142 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:12] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:57:12,548 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:12] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:57:15,320 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:15] "GET /journalist_login.html HTTP/1.1" 200 -
+2025-03-17 23:57:15,623 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:15] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:57:16,011 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:16] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:57:19,034 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:19] "GET /journalist_register.html HTTP/1.1" 200 -
+2025-03-17 23:57:19,340 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:19] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:57:19,742 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:57:19] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:58:26,285 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:26] "POST /api/journalists/register HTTP/1.1" 201 -
+2025-03-17 23:58:26,286 - veritas-ia - INFO - Periodista registrado con ID 1
+2025-03-17 23:58:28,261 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:28] "GET /journalist_login.html HTTP/1.1" 200 -
+2025-03-17 23:58:28,571 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:28] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:58:29,022 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:29] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:58:42,466 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:42] "POST /api/journalists/login HTTP/1.1" 200 -
+2025-03-17 23:58:42,467 - veritas-ia - INFO - Inicio de sesión exitoso para periodista 1
+2025-03-17 23:58:43,766 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:43] "GET / HTTP/1.1" 200 -
+2025-03-17 23:58:43,803 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:43] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:58:44,271 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:44] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:58:47,006 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-17 23:58:47,095 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:58:47,258 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-17 23:58:47,349 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-17 23:58:47,351 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-17 23:58:47,488 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /api/reports HTTP/1.1" 200 -
+2025-03-17 23:58:47,488 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-17 23:58:47,809 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:47] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:58:54,103 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:54] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-17 23:58:54,409 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:54] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-17 23:58:54,846 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:54] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-17 23:58:54,906 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:58:54] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-17 23:59:46,458 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:59:46] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-17 23:59:58,207 - veritas-ia - INFO - 127.0.0.1 - - [17/Mar/2025 23:59:58] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:00:02,998 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:00:02] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:00:16,569 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:00:16,570 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:07:54,818 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:07:56,387 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:07:56,387 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:08:02,237 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:08:02] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:08:02,276 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:08:02] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:08:02,937 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:08:02] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:08:03,253 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:08:03] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:08:37,380 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:08:37] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:09:29,128 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:09:29,128 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:10:18,384 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:10:19,659 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:10:19,661 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:10:25,588 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:10:25] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:10:25,622 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:10:25] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:10:26,311 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:10:26] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:10:26,632 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:10:26] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:10:43,606 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:10:43] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:10:57,557 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:10:57,566 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:12:05,656 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:12:07,727 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:12:07,727 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:12:10,515 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:12:10] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:12:17,467 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:12:17] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:12:17,766 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:12:17] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:12:18,442 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:12:18] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:12:18,471 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:12:18] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:12:43,224 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:12:43] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:12:52,509 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:12:52,509 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:17:48,954 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:17:52,299 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:17:52,299 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:17:59,297 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:17:59] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:17:59,331 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:17:59] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:17:59,985 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:17:59] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:18:00,310 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:18:00] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:18:13,821 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:18:13] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:19:43,565 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:19:43,565 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:21:08,244 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:21:11,247 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:21:11,248 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:21:14,814 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:21:14] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:21:14,849 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:21:14] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:21:15,658 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:21:15] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:21:15,987 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:21:15] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:21:26,274 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:21:26] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:23:43,877 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:23:43,877 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:23:45,178 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:23:46,734 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:23:46,734 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:23:51,277 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:23:51] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:23:51,346 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:23:51] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:23:51,984 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:23:51] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:23:52,316 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:23:52] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:24:02,037 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:24:02] "POST /api/verifications HTTP/1.1" 401 -
+2025-03-18 00:25:31,711 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:25:31,711 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:25:34,109 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:25:35,645 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:25:35,645 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:25:37,861 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:37] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:25:37,906 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:37] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:25:38,674 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:38] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:25:42,474 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:42] "GET /journalist_login.html HTTP/1.1" 200 -
+2025-03-18 00:25:42,548 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:42] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:25:43,149 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:43] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:25:57,274 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:57] "POST /api/journalists/login HTTP/1.1" 200 -
+2025-03-18 00:25:57,275 - veritas-ia - INFO - Inicio de sesión exitoso para periodista 1
+2025-03-18 00:25:57,999 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:57] "POST /api/journalists/login HTTP/1.1" 200 -
+2025-03-18 00:25:57,999 - veritas-ia - INFO - Inicio de sesión exitoso para periodista 1
+2025-03-18 00:25:58,576 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:58] "GET / HTTP/1.1" 200 -
+2025-03-18 00:25:58,638 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:58] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:25:59,353 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:25:59] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:26:01,606 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:01] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 00:26:01,755 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:01] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:26:01,861 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:01] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 00:26:02,058 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:02] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 00:26:02,060 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:02] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 00:26:02,672 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:02] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 00:26:02,673 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 00:26:02,716 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:02] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:26:07,745 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:07] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:26:08,045 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:08] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:26:08,739 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:08] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:26:08,767 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:08] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:26:20,963 - veritas-ia - ERROR - Error de base de datos al crear verificación: no such column: verified
+2025-03-18 00:26:20,963 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:26:20] "POST /api/verifications HTTP/1.1" 500 -
+2025-03-18 00:26:20,963 - veritas-ia - ERROR - Error del servidor: no such column: verified
+2025-03-18 00:36:43,470 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:36:43,471 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:37:18,947 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:37:20,767 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:37:20,768 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:37:24,565 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:37:24] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:37:24,606 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:37:24] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:37:25,226 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:37:25] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:37:25,551 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:37:25] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:37:38,061 - veritas-ia - ERROR - Error de base de datos al crear verificación: no such column: verified
+2025-03-18 00:37:38,061 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:37:38] "POST /api/verifications HTTP/1.1" 500 -
+2025-03-18 00:37:38,061 - veritas-ia - ERROR - Error del servidor: Error de base de datos: no such column: verified
+2025-03-18 00:39:22,158 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:39:22,159 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 00:40:39,578 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 00:40:40,946 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 00:40:40,947 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 00:40:45,012 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:40:45] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:40:45,049 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:40:45] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:40:45,703 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:40:45] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:40:46,033 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:40:46] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:40:58,332 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:40:58] "POST /api/verifications HTTP/1.1" 201 -
+2025-03-18 00:40:58,333 - veritas-ia - INFO - Verificación creada con ID 1 para reporte 1
+2025-03-18 00:41:00,289 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:00] "GET / HTTP/1.1" 200 -
+2025-03-18 00:41:00,598 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:00] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:41:01,280 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:01] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:41:04,253 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:04] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 00:41:04,559 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:04] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:41:04,627 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:04] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 00:41:04,629 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:04] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 00:41:04,630 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:04] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 00:41:05,281 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:05] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 00:41:05,282 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 00:41:05,311 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:05] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:41:14,906 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:14] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 00:41:15,204 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:15] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:41:15,894 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:15] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 00:41:15,902 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:15] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:41:19,805 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:19] "GET / HTTP/1.1" 200 -
+2025-03-18 00:41:20,107 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:20] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:41:20,781 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:20] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:41:23,082 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:23] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 00:41:23,375 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:23] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 00:41:23,483 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:23] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 00:41:23,484 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:23] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 00:41:23,485 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:23] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 00:41:25,192 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:25] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 00:41:25,192 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 00:41:25,311 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 00:41:25] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 00:41:51,467 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 00:41:51,468 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 10:29:13,101 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 10:29:14,598 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 10:29:14,598 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 10:29:25,756 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:25] "GET / HTTP/1.1" 200 -
+2025-03-18 10:29:25,855 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:25] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 10:29:26,980 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:26] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 10:29:31,047 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:31] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 10:29:31,470 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:31] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 10:29:31,588 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:31] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 10:29:32,114 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:32] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 10:29:32,115 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:32] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 10:29:33,295 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:33] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 10:29:33,296 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 10:29:33,521 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:29:33] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 10:32:34,396 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:32:34] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 10:32:34,396 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 10:35:33,929 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:35:33] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 10:35:33,929 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 10:38:33,448 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 10:38:33] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 10:38:33,449 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 11:10:12,296 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 11:10:12] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 11:10:12,299 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 11:11:34,810 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 11:11:34] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 11:11:34,818 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 11:11:57,904 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 11:11:57,906 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 12:19:06,558 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 12:19:08,365 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 12:19:08,367 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 12:19:13,491 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:13] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 12:19:13,611 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:13] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 12:19:13,716 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:13] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:19:13,887 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:13] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 12:19:13,888 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:13] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 12:19:14,680 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:14] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 12:19:14,681 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 12:19:14,743 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:14] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:19:29,312 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:29] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 12:19:29,364 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:29] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:19:29,679 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:29] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 12:19:30,016 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:30] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:19:31,094 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:31] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:19:36,792 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:36] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 12:19:36,824 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:36] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:19:38,366 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:38] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 12:19:38,688 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:38] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:19:39,892 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:19:39] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:19:59,887 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 12:19:59,888 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 12:23:17,161 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 12:23:19,545 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 12:23:19,545 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 12:23:20,643 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:23:20] "GET /verification_details.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 12:23:20,684 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:23:20] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:23:21,258 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:23:21] "GET /api/verifications/1 HTTP/1.1" 200 -
+2025-03-18 12:23:21,667 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:23:21] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:23:28,637 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:23:28] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:23:42,271 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 12:23:42,272 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 12:25:13,842 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 12:25:18,186 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 12:25:18,187 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 12:25:34,319 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:34] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 12:25:34,363 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:34] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:25:34,574 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:34] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 12:25:34,665 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:34] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 12:25:34,666 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:34] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 12:25:35,268 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:35] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 12:25:35,269 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 12:25:35,312 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:25:35] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:25:55,167 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 12:25:55,167 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 12:25:57,055 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 12:25:59,484 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 12:25:59,484 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 12:26:03,604 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:03] "GET / HTTP/1.1" 200 -
+2025-03-18 12:26:03,605 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:03] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:26:03,932 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:03] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:26:04,187 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:04] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 12:26:04,994 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:04] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 12:26:05,293 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:05] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 12:26:05,341 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:05] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 12:26:05,342 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:05] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 12:26:05,343 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:05] "GET /js/verify-button.js HTTP/1.1" 200 -
+2025-03-18 12:26:05,670 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:05] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 12:26:05,670 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 12:26:05,699 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 12:26:05] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:13:01,462 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 13:13:01,488 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 13:13:05,716 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 13:13:08,786 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 13:13:08,787 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 13:13:12,094 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:12] "GET / HTTP/1.1" 200 -
+2025-03-18 13:13:12,274 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:12] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:13:13,091 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:13] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:13:15,065 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:15] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 13:13:15,228 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:15] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:13:15,315 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:15] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 13:13:15,538 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:15] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 13:13:15,896 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:15] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 13:13:15,898 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 13:13:15,944 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:15] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:13:23,853 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:23] "GET /verify_report.html?report_id=1 HTTP/1.1" 200 -
+2025-03-18 13:13:24,162 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:24] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:13:24,533 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:24] "GET /api/reports/1 HTTP/1.1" 200 -
+2025-03-18 13:13:24,579 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:24] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:13:29,864 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:29] "GET / HTTP/1.1" 200 -
+2025-03-18 13:13:30,160 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:30] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:13:30,611 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:30] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:13:32,023 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:32] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 13:13:32,332 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:32] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:13:32,782 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:13:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:14:40,036 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 13:14:58,501 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 13:14:58,502 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 13:14:58,502 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:14:58] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 13:27:28,368 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 13:27:28,383 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 13:27:31,083 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 13:27:32,840 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 13:27:32,841 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 13:27:39,826 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:27:39] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 13:27:39,900 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:27:39] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:27:40,079 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:27:40] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 13:27:42,679 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:27:42] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:27:45,543 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 13:28:17,438 - veritas-ia - ERROR - Error en la solicitud a Perplexity: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Read timed out. (read timeout=30)
+2025-03-18 13:28:50,316 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 13:28:50,316 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 13:28:50,317 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:28:50] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 13:28:50,318 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:28:50] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 13:28:50,319 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:28:50] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:32:41,816 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 13:32:41,818 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 13:32:59,118 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 13:33:00,925 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 13:33:00,925 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 13:33:07,234 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:33:07] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 13:33:07,262 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:33:07] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 13:33:07,466 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:33:07] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 13:33:08,090 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:33:08] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 13:33:11,044 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 13:33:45,002 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 13:33:45,011 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 13:33:45,011 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 13:33:45] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 16:50:09,051 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 16:50:09,171 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 17:03:05,139 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 17:03:07,034 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 17:03:07,035 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 17:03:14,349 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 17:03:14] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 17:03:14,589 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 17:03:14] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 17:03:14,593 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 17:03:14] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 17:03:15,823 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 17:03:15] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 17:03:46,949 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 17:04:24,851 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 17:04:24,851 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 17:04:24,851 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 17:04:24] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 17:08:24,535 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 17:08:24] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 18:09:51,439 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 18:09:51,541 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 18:14:22,120 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 18:14:24,059 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 18:14:24,060 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 18:14:32,986 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:14:32] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 18:14:34,032 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:14:34] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 18:14:34,352 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:14:34] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 18:14:34,425 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:14:34] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 18:14:34,781 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:14:34] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 18:14:43,632 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 18:15:03,392 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 18:15:03,393 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 18:15:03,393 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:15:03] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 18:15:54,915 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 18:15:54,915 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 18:15:57,087 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 18:15:58,639 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 18:15:58,640 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 18:16:14,606 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:16:14] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 18:16:14,661 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:16:14] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 18:16:14,850 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:16:14] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 18:16:15,202 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:16:15] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 18:16:18,029 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 18:16:37,900 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 18:16:37,901 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 18:16:37,901 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 18:16:37] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 20:06:47,928 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:06:47,972 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:06:49,700 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:06:51,268 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:06:51,269 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:07:06,364 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:07:06] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:07:06,605 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:07:06] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:07:06,620 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:07:06] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:07:07,793 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:07:07] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:07:10,721 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 20:07:31,348 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 20:07:31,349 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 20:07:31,349 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:07:31] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 20:09:35,467 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:09:35,468 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:19:51,307 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:19:52,984 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:19:52,985 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:20:12,560 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:20:12] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:20:12,771 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:20:12] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:20:12,781 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:20:12] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:20:13,545 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:20:13] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:20:15,944 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 20:20:32,664 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 20:20:32,664 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 20:20:32,664 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:20:32] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 20:26:15,439 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:26:15,456 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:26:17,052 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:26:18,700 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:26:18,702 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:26:30,814 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:26:30] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:26:30,982 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:26:30] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:26:31,068 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:26:31] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:26:31,745 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:26:31] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:26:34,872 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 20:26:53,125 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 20:26:53,126 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 20:26:53,126 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:26:53] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 20:34:12,655 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:34:12,670 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:34:14,334 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:34:16,198 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:34:16,199 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:34:23,415 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:34:23] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:34:23,491 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:34:23] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:34:23,650 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:34:23] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:34:24,153 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:34:24] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:34:26,810 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 20:34:43,987 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 20:34:43,987 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 20:34:43,988 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:34:43] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 20:39:04,432 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:39:04,442 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:39:15,476 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:39:16,949 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:39:16,950 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:39:39,070 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:39] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:39:39,078 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:39] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:39:39,079 - veritas-ia - ERROR - Error en solicitud GET: [Errno 32] Broken pipe
+2025-03-18 20:39:39,079 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:39] "GET /verificador.html HTTP/1.1" 500 -
+2025-03-18 20:39:41,831 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:41] "GET / HTTP/1.1" 200 -
+2025-03-18 20:39:42,137 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:42] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:39:42,469 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:42] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:39:43,957 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:43] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:39:44,262 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:44] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:39:44,309 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:44] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:39:44,706 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:39:44] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:39:48,838 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 20:40:05,042 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 20:40:05,042 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 20:40:05,043 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:40:05] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 20:40:29,395 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:40:29,396 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:47:00,788 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:47:02,447 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:47:02,448 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:47:13,409 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:13] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:15,361 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:15] "GET / HTTP/1.1" 200 -
+2025-03-18 20:47:15,664 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:15] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:16,148 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:16] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:16,984 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:16] "GET /reportar.html HTTP/1.1" 200 -
+2025-03-18 20:47:17,283 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:17] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:17,399 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:17] "GET /css/captcha.css HTTP/1.1" 200 -
+2025-03-18 20:47:17,401 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:17] "GET /js/reportar.js HTTP/1.1" 200 -
+2025-03-18 20:47:18,007 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:18] "GET /api/reports HTTP/1.1" 200 -
+2025-03-18 20:47:18,009 - veritas-ia - INFO - Devolviendo 5 reportes activos
+2025-03-18 20:47:18,050 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:18] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:20,101 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:20] "GET / HTTP/1.1" 200 -
+2025-03-18 20:47:20,399 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:20] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:20,748 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:20] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:21,101 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:21] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:47:21,411 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:21] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:21,471 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:21] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:47:21,810 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:21] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:27,395 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:27] "GET /verificador.html? HTTP/1.1" 200 -
+2025-03-18 20:47:27,698 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:27] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:27,759 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:27] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:47:28,683 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:28] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:32,876 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:32] "GET /verificador.html? HTTP/1.1" 200 -
+2025-03-18 20:47:33,193 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:33] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:33,240 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:33] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:47:33,565 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:33] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:45,534 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 20:47:45,535 - veritas-ia - INFO - Servidor cerrado correctamente
+2025-03-18 20:47:46,756 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:47:48,654 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:47:48,654 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:47:54,598 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:54] "GET /verificador.html? HTTP/1.1" 200 -
+2025-03-18 20:47:54,628 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:54] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:54,859 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:54] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:47:55,236 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:55] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:47:57,703 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:57] "GET /verificador.html? HTTP/1.1" 200 -
+2025-03-18 20:47:58,027 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:58] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:47:58,111 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:58] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:47:58,455 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:47:58] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:48:15,903 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:48:17,672 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:48:17,672 - veritas-ia - ERROR - Error al iniciar el servidor: [Errno 98] Address already in use
+2025-03-18 20:48:32,136 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:48:34,100 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:48:34,100 - veritas-ia - ERROR - Error al iniciar el servidor: [Errno 98] Address already in use
+2025-03-18 20:49:43,790 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:49:45,274 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:49:45,275 - veritas-ia - ERROR - Error al iniciar el servidor: [Errno 98] Address already in use
+2025-03-18 20:51:41,244 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:51:42,625 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:51:42,626 - veritas-ia - ERROR - Error al iniciar el servidor: [Errno 98] Address already in use
+2025-03-18 20:58:32,409 - veritas-ia - INFO - Base de datos inicializada correctamente
+2025-03-18 20:58:34,000 - veritas-ia - INFO - Verificador de noticias listo para usar.
+2025-03-18 20:58:34,000 - veritas-ia - INFO - Servidor iniciado en http://localhost:5000
+2025-03-18 20:58:41,338 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:58:41] "GET / HTTP/1.1" 200 -
+2025-03-18 20:58:41,396 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:58:41] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:58:44,797 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:58:44] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:59:13,462 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:59:13] "GET /verificador.html HTTP/1.1" 200 -
+2025-03-18 20:59:13,560 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:59:13] "GET /css/style.css HTTP/1.1" 200 -
+2025-03-18 20:59:13,706 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:59:13] "GET /css/verification.css HTTP/1.1" 200 -
+2025-03-18 20:59:13,868 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 20:59:13] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-18 20:59:49,323 - veritas-ia - INFO - Enviando solicitud a Perplexity API...
+2025-03-18 21:00:05,714 - veritas-ia - INFO - Respuesta de Perplexity - Status: 200
+2025-03-18 21:00:05,714 - veritas-ia - INFO - Verificación completada exitosamente
+2025-03-18 21:00:05,714 - veritas-ia - INFO - 127.0.0.1 - - [18/Mar/2025 21:00:05] "POST /api/verify HTTP/1.1" 200 -
+2025-03-18 21:01:06,171 - veritas-ia - INFO - Servidor detenido por el usuario
+2025-03-18 21:01:06,172 - veritas-ia - INFO - Servidor cerrado correctamente
