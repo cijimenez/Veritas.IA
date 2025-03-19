@@ -30,12 +30,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger("veritas-ia")
 
-# Definir la ruta de la base de datos para compatibilidad con Railway
-DB_PATH = os.environ.get('RAILWAY_VOLUME_MOUNT_PATH', '.') + '/reports.db'
-logger.info(f"Usando base de datos en: {DB_PATH}")
+# Definir la ruta de la base de datos para compatibilidad con Render
+if os.environ.get('RENDER'):
+    # Directorio de datos persistentes en Render
+    DB_PATH = '/var/data/reports.db'
+    # Asegurar que el directorio existe
+    os.makedirs('/var/data', exist_ok=True)
+else:
+    # Para desarrollo local
+    DB_PATH = './reports.db'
 
-# Asegurarse de que el directorio static existe
-os.makedirs('static', exist_ok=True)
+logger.info(f"Usando base de datos en: {DB_PATH}")
 
 # Agregar clave secreta para JWT
 JWT_SECRET = "veritas_ia_journalists_secret_key"  # En producción, esto debería ser una variable de entorno segura
