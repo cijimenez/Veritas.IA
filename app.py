@@ -32,10 +32,10 @@ logger = logging.getLogger("veritas-ia")
 
 # Definir la ruta de la base de datos para compatibilidad con Render
 if os.environ.get('RENDER'):
-    # Directorio de datos persistentes en Render
-    DB_PATH = '/var/data/reports.db'
+    # En Render, usa el directorio de la aplicación
+    DB_PATH = os.path.join(os.getcwd(), 'data', 'reports.db')
     # Asegurar que el directorio existe
-    os.makedirs('/var/data', exist_ok=True)
+    os.makedirs(os.path.join(os.getcwd(), 'data'), exist_ok=True)
 else:
     # Para desarrollo local
     DB_PATH = './reports.db'
